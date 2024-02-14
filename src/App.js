@@ -12,6 +12,10 @@ import dApp from "./pages/dapp";
 import Infra from "./pages/infra";
 import Contact from "./pages/contact";
 import Faucet from "./pages/faucet";
+import Systems from "./pages/systems";
+
+
+
 
  
 function App() {
@@ -26,6 +30,7 @@ function App() {
                 <Route path="/infra" element={<Infra />} />       
                 <Route path="/contact" element={<Contact />}/>
                 <Route path="/faucet" element={<Faucet />} />
+                <Route path="/systems" element={<Systems />} />
             </Routes> 
         </Router>
     );

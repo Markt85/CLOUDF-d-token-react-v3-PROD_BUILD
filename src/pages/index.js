@@ -20,7 +20,7 @@ const Home = () => {
 
 
 
-<div class="container px-4 py-5" id="featured-3">
+<div class="container" px-4 py-5 id="featured-3">
 <h2 class="pb-2 border-bottom"></h2>
 <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 <div class="feature col">
@@ -66,7 +66,7 @@ Continue
 <h1 class="display-5 fw-bold text-body-emphasis">dApp & Blockchain Technology</h1>
 <div class="col-lg-6 mx-auto">
 <p class="lead mb-4">We build decentralised applications. Our team of experienced developers will ensure maximum flexibility and security for your app.
-Comprehensive dApp consulting from our dApp experts based on extensive market and technological experience.</p>
+Comprehensive dApp & Blockchain consulting from our Crypto experts, based on extensive market and technological experience.</p>
 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 <a href="/" class="btn btn-primary btn-lg px-4 gap-3">Read more</a>
 </div>
@@ -83,8 +83,8 @@ Comprehensive dApp consulting from our dApp experts based on extensive market an
 <h2 class="pb-2 border-bottom"></h2>  
 <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
 <div class="d-flex flex-column align-items-start gap-2">
-<h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-<p class="text-muted">We provide IT services for business of all sizes across the globe.  Our certified engineers </p>
+<h3 class="fw-bold">IT Infrastructure Services:</h3>
+<p class="text-muted">We provide IT services for business of all sizes across the globe.  Our certified engineers support numerous business remotely and onsite. </p>
 <a href="#" class="btn btn-primary btn-lg">More Info</a>
 </div>
 <div class="row row-cols-1 row-cols-sm-2 g-4">
@@ -94,8 +94,8 @@ Comprehensive dApp consulting from our dApp experts based on extensive market an
   <use xLinkHref="#collection"></use>
 </svg>
 </div>
-<h4 class="fw-semibold mb-0">Featured title</h4>
-<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+<h4 class="fw-semibold mb-0">IT Service & Delivery</h4>
+<p class="text-muted">We are specialists in IT Service Delivery and resourcing.  Whether its a project or BAU support we can deliver effeciencies and improved service levels.</p>
 </div>  
 <div class="d-flex flex-column gap-2">
 <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
@@ -103,8 +103,8 @@ Comprehensive dApp consulting from our dApp experts based on extensive market an
   <use xLinkHref="#gear-fill"></use>
 </svg>
 </div>
-<h4 class="fw-semibold mb-0">Featured title</h4>
-<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+<h4 class="fw-semibold mb-0">Microsoft 365 & Azure</h4>
+<p class="text-muted">Get industry-leading support for your Microsoft 365 apps.  Get more done fast with Microsoft 365 & Azure</p>
 </div>  
 <div class="d-flex flex-column gap-2">
 <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
@@ -112,8 +112,8 @@ Comprehensive dApp consulting from our dApp experts based on extensive market an
   <use xLinkHref="#speedometer"></use>
 </svg>
 </div>
-<h4 class="fw-semibold mb-0">Featured title</h4>
-<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+<h4 class="fw-semibold mb-0">DevOps</h4>
+<p class="text-muted">Outsource your DevOps projects to our nearshore talent. We can accommodate engagements of all sizes and complexities.</p>
 </div>  
 <div class="d-flex flex-column gap-2">
 <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
@@ -121,8 +121,8 @@ Comprehensive dApp consulting from our dApp experts based on extensive market an
   <use xLinkHref="#table"></use>
 </svg>
 </div>
-<h4 class="fw-semibold mb-0">Featured title</h4>
-<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+<h4 class="fw-semibold mb-0">Cybersecurity</h4>
+<p class="text-muted">We provide enhanced monitoring, protection and training services to keep your data secure. We can detect a breach the moment it happens and take action to prevent damage. </p>
 </div>
 </div>
 </div>

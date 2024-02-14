@@ -1,5 +1,3 @@
-// Filename - pages/blogs.js
-
 import React from "react";
 
 const dApp = () => {

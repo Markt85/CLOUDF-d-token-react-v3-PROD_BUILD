@@ -64,6 +64,7 @@ const Navbar = () => {
   };
     return (
         <>
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
                 <a id="Web"></a>
@@ -103,6 +104,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      
         </>
     );
 };

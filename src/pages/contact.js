@@ -38,19 +38,17 @@ const Contact = () => {
 
         
           
-    <div class="container px-4 py-5">
-    <div class="px-4 py-5 my-5 text-center">    
-    <h1 class="display-5 fw-bold"></h1>
-    <p>Please email us at <h5>hello@d-token.io</h5></p><p> or complete the form below. </p>
+    <div class="container px-4 py-5 text-left">
+      
+    <div class="px-4 py-5 my-5 text-center">  
+    <p>Please email us at <h5>hello@d-token.io</h5></p><p> or send us a message. </p>  
+    <h1 class="display-5 fw-bold"></h1>    
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">
-      <a id="#contact"></a>
-      <h3 class="fs-2 text-body-emphasis"></h3>
-      <h3 class="fs-2 text-body-emphasis"></h3>
+      <a id="#contact"></a> 
+    
 
         <p><form onSubmit={sendEmail}>
-        
-
         <p><td><label>Name</label></td>
         <input type="text" name="user_name" /></p>
         <p><td><label>Email</label></td>
@@ -63,7 +61,6 @@ const Contact = () => {
         <p>{stateMessage}</p>
       </form>
       </p>
-
       </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         
@@ -72,14 +69,9 @@ const Contact = () => {
   </div>
 
     <footer class="py-3 my-4 fixed-bottom">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Web</a></li>
-      <li class="nav-item"><a href="/#dApp" class="nav-link px-2 text-muted">dApp</a></li>
-      <li class="nav-item"><a href="/#infra" class="nav-link px-2 text-muted">Infrastructure</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
-    </ul>
-    <p class="text-center text-muted">d-token.io | d-token.eth | hello@d-token.io</p>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+
+    <p class="text-center text-muted"><a href="/">Home </a> |  <a href="/">Web</a> | <a href="/"> dApp</a> | <a href="/"> Infra</a></p>
   </footer>
   </div>
       
