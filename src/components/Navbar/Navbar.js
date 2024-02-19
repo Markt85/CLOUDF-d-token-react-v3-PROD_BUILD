@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 
-
 const Navbar = () => {
    
   const [walletAddress, setWalletAddress] = useState("");
@@ -64,7 +63,7 @@ const Navbar = () => {
   };
     return (
         <>
-        
+        <div class="navbar-header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
                 <a id="Web"></a>
@@ -84,7 +83,7 @@ const Navbar = () => {
                 <a class="nav-link" href="/#dApp">dApp & Blockchain</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/#Infra">Infrastructure</a>
+                <a class="nav-link" href="/#infra">Infrastructure</a>
               </li>
                 </ul>            
               <button
@@ -104,7 +103,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      
+      </div>
         </>
     );
 };

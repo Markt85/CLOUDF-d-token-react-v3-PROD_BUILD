@@ -10,14 +10,10 @@ import Home from "./pages";
 import Web from "./pages/web";
 import dApp from "./pages/dapp";
 import Infra from "./pages/infra";
-import Contact from "./pages/contact";
 import Faucet from "./pages/faucet";
 import Systems from "./pages/systems";
+import PageNotFound from "./pages/pagenotfound";
 
-
-
-
- 
 function App() {
     
     return (
@@ -28,11 +24,12 @@ function App() {
                 <Route path="/web" element={<Web />} />
                 <Route path="/dapp" element={<dApp />} />
                 <Route path="/infra" element={<Infra />} />       
-                <Route path="/contact" element={<Contact />}/>
                 <Route path="/faucet" element={<Faucet />} />
                 <Route path="/systems" element={<Systems />} />
+                <Route path="*" element={<PageNotFound/>} />
             </Routes> 
         </Router>
+       
     );
 }
  

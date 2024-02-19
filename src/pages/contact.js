@@ -36,44 +36,39 @@ const Contact = () => {
       e.target.reset();
     };  return (
 
-        
-          
-    <div class="container px-4 py-5 text-left">
-      
-    <div class="px-4 py-5 my-5 text-center">  
-    <p>Please email us at <h5>hello@d-token.io</h5></p><p> or send us a message. </p>  
-    <h1 class="display-5 fw-bold"></h1>    
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">
-      <a id="#contact"></a> 
-    
+		 
+		<div class="container px-4 py-5">
+		<div class="row align-items-center g-lg-5 py-5">
+			  <div class="col-lg-7 text-center text-lg-start">
+				<h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Say hello</h1>
+			
+				<p class="col-lg-10 fs-4">Email us at hello@d-token.io or send a message. </p>
+			  </div>
+			  <div class="col-md-10 mx-auto col-lg-5">
+				<form onSubmit={sendEmail} class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+				  <div class="form-floating mb-3">
+					<input type="text" class="form-control" id="from_name" name="from_name" placeholder="Your name.." required/>
+					<label for="from_name">Name</label>
+				  </div>
+				  <div class="form-floating mb-3">
+					<input type="email" class="form-control" id="user_email" name="user_email" placeholder="name@example.com" required/>
+					<label for="user_email">Email address</label>
+				  </div>
+				  <div class="form-floating mb-5">
+					
+					<input type="message" class="form-control" id="message" name="message" placeholder="Type your message"/>
+					<label for="message">Message</label>
+				  </div>
+				  <div class="checkbox mb-3">
+				  </div>
+				  <button class="w-100 btn btn-lg btn-primary" type="submit" value="Send" >Send</button>
+				  <hr class="my-4"/>
+				  <small class="text-body-secondary">{stateMessage && <p> </p>}
+       			 <p>{stateMessage}</p></small>
+				</form>
+				</div>
+				</div></div>
+	);
+};
 
-        <p><form onSubmit={sendEmail}>
-        <p><td><label>Name</label></td>
-        <input type="text" name="user_name" /></p>
-        <p><td><label>Email</label></td>
-        <input type="email" name="user_email" /></p>
-        <p><td><label>Message</label></td>
-        <input type="message" textarea name="message" /></p>
-
-        <input type="submit" class="btn btn-primary" value="Send" disabled={isSubmitting} />
-        {stateMessage && <p> </p>}
-        <p>{stateMessage}</p>
-      </form>
-      </p>
-      </p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        
-      </div>
-    </div>
-  </div>
-
-    <footer class="py-3 my-4 fixed-bottom">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
-
-    <p class="text-center text-muted"><a href="/">Home </a> |  <a href="/">Web</a> | <a href="/"> dApp</a> | <a href="/"> Infra</a></p>
-  </footer>
-  </div>
-      
-    );
-  };export default Contact;
+export default Contact;

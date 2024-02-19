@@ -1,6 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Contact from "./contact.js";
+import { Button } from 'reactstrap'; 
 
 const Home = () => {
 	return <div>
@@ -13,7 +15,7 @@ const Home = () => {
 <p class="lead mb-4">We specialise in a wide range of web and application development tools. Whatever your project we can get you up an running with the right tech choice, implmentation and support.
 </p>
 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-<a href="/contact" class="btn btn-primary btn-lg px-4 gap-3">Get in touch</a>
+<a href="#contact" class="btn btn-primary btn-lg px-4 gap-3">Get in touch</a>
 </div>
 </div>
 </div>
@@ -72,6 +74,7 @@ Comprehensive dApp & Blockchain consulting from our Crypto experts, based on ext
 </div>
 <div class="b-example-divider"></div>
 </div>
+<a id="infra"></a>
 </div>
 
 
@@ -79,7 +82,6 @@ Comprehensive dApp & Blockchain consulting from our Crypto experts, based on ext
 
 <div class="b-example-divider">
 <div class="container px-4 py-5">
-<a id="Infra"></a>
 <h2 class="pb-2 border-bottom"></h2>  
 <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
 <div class="d-flex flex-column align-items-start gap-2">
@@ -127,24 +129,20 @@ Comprehensive dApp & Blockchain consulting from our Crypto experts, based on ext
 </div>
 </div>
 </div>
+<a id="contact"></a>
+<Contact />
 </div>
-
 
 <footer class="py-3 my-4" fixed-bottom>
 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-<li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
 <li class="nav-item"><a href="#web" class="nav-link px-2 text-muted">Web</a></li>
-<li class="nav-item"><a href="/#dApp" class="nav-link px-2 text-muted">dApp & Blockchain</a></li>
+<li class="nav-item"><a href="#dApp" class="nav-link px-2 text-muted">dApp & Blockchain</a></li>
 <li class="nav-item"><a href="#infra" class="nav-link px-2 text-muted">Infrastructure</a></li>
-<li class="nav-item"><a href="/contact" class="nav-link px-2 text-muted">Contact</a></li>
 </ul>
-<p class="text-center text-muted">d-token.io | d-token.eth | hello@d-token.io</p>
+<p class="text-center text-muted">d-token.io | d-token.eth | hello@d-token.io <li><a href="https://twitter.com/d_token_io" target='_blank' rel="noreferrer"><i class="bi bi-twitter-x"></i></a> <a href="https://www.instagram.com/d_token_io/" target='_blank' rel="noreferrer"> <i class="bi bi-instagram"></i></a> <a href="/" target='_blank' rel="noreferrer"><i class="bi bi-facebook"></i></a></li></p>
 </footer>
 </div>
 
 };
 
-export default Home;
-
-
-
+export default Home
