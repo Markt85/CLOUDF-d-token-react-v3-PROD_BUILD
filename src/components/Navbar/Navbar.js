@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 
+
 const Navbar = () => {
    
-  const [walletAddress, setWalletAddress] = useState("");
+const [walletAddress, setWalletAddress] = useState("");
 
   useEffect(() => {
     getCurrentWalletConnected();
@@ -61,20 +62,20 @@ const Navbar = () => {
       console.log("Please install MetaMask");
     }
   };
-    return (
+    return (      
+      
         <>
-        <div class="navbar-header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-            <div class="container">
-                <a id="Web"></a>
-                 <a class="navbar-brand" href="#">d-Token</a>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a id="Web"></a>        
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">  
+        <div class="container-fluid">   
+           <a class="navbar-brand" href="#">d-Token</a>               
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>                
+               </button>              
+              <div class="collapse navbar-collapse " id="navbarColor02">
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0 float-end">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/#web">Web</a>
@@ -83,9 +84,12 @@ const Navbar = () => {
                 <a class="nav-link" href="/#dApp">dApp & Blockchain</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/#infra">Infrastructure</a>
+                <a class="nav-link" href="/#community">d-Token Community</a>
               </li>
-                </ul>            
+              <li class="nav-item">
+                <a class="nav-link" href="/#infra">Infrastructure</a>
+              </li>       
+              <li class="nav-item float-end">
               <button
                 className="enableEthereumButton"
                 onClick={connectWallet}
@@ -98,17 +102,15 @@ const Navbar = () => {
                       )}...${walletAddress.substring(38)}`
                     : "Connect Wallet "}
                 </span>
-              </button>
-            
+              </button>         
+              </li>
+              </ul>
+              
           </div>
-        </div>
+        </div>      
       </nav>
-      </div>
-        </>
+      </>
     );
 };
-
-
-
  
 export default Navbar;

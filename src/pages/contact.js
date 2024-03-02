@@ -3,6 +3,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import 'bootstrap/dist/css/bootstrap.css';
 
+
 const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [stateMessage, setStateMessage] = useState(null);  const sendEmail = (e) => {
@@ -39,10 +40,13 @@ const Contact = () => {
 		 
 		<div class="container px-4 py-5">
 		<div class="row align-items-center g-lg-5 py-5">
-			  <div class="col-lg-7 text-center text-lg-start">
-				<h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Say hello</h1>
+			  <div class="col-lg-7 text-center text-lg-start" >
+				<h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">How can we help?</h1>
 			
-				<p class="col-lg-10 fs-4">Email us at hello@d-token.io or send a message. </p>
+				<p class="col-lg-10 fs-4">Our team of experts is on hand to answer your questions </p>
+        <p class="col-lg-10 fs-4"> Email us at hello@d-token.io or send a message.</p>
+        <p class="col-lg-8 fs-2">Join the d-Token community</p>
+        
 			  </div>
 			  <div class="col-md-10 mx-auto col-lg-5">
 				<form onSubmit={sendEmail} class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
@@ -63,7 +67,7 @@ const Contact = () => {
 				  </div>
 				  <button class="w-100 btn btn-lg btn-primary" type="submit" value="Send" >Send</button>
 				  <hr class="my-4"/>
-				  <small class="text-body-secondary">{stateMessage && <p> </p>}
+				  <small class="text-white">{stateMessage && <p> </p>}
        			 <p>{stateMessage}</p></small>
 				</form>
 				</div>

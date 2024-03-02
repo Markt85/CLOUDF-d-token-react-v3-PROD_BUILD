@@ -1,12 +1,17 @@
 import React from "react";
+import "jquery/dist/jquery.min.js";
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Contact from "./contact.js";
 import { Button } from 'reactstrap'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle'
+
 
 const Home = () => {
 	return <div>
-
+<div class="px-2 text-left text-success">ERC20 Token: dTkn 0x28EF281ce0f5D46bae9D63E4117718816Ae2FBa9</div>
+              
 <a id="web"></a>
 <div class="px-4 py-5 my-5 text-center">
 <img class="d-block mx-auto mb-4" src="internet.jpg" alt="" width="172" height="157"/>
